@@ -22,7 +22,7 @@ def shorten(session):
     path = assign_path(session['url'])
     return 'http://127.0.0.1:5000/' + path
 
-def assign_path(url, charset=hsk.simp):
+def assign_path(url, charset=hsk.emoji):
     """Try 20 times to get, at random, an empty slot for a one-digit path.
 
     If that fails, try two digits, etc."""
